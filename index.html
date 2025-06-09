@@ -1,567 +1,746 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Teachair - Платформа для онлайн обучения</title>
-    <meta name="description"
-        content="Teachair - открытая, гибкая, современная платформа с глубокой интеграцией в экосистему Telegram и встроенными функциями Искусственного интеллекта (AI)" />
-    <link rel="shortcut icon" href="./assets/logo/teachair-logo.svg" type="image/svg+xml" />
+    <title>Play | Free Startup and SaaS Landing Page Template by UIdeck</title>
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:title" content="Teachair - Платформа для онлайн обучения" />
-    <meta property="og:description"
-        content="Teachair - открытая, гибкая, современная платформа с глубокой интеграцией в экосистему Telegram и встроенными функциями Искусственного интеллекта (AI)" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://my.teachair.app/" />
-    <meta property="og:image" content="./assets/logo/teachair-logo.svg" />
+    <!-- Primary Meta Tags -->
+<meta name="title" content="Play - Free Open Source HTML Bootstrap Template by UIdeck">
+<meta name="description" content="Play - Free Open Source HTML Bootstrap Template by UIdeck Team">
 
-    <link rel="stylesheet" href="./css/tailwind-runtime.css" />
-    <!-- <link rel="stylesheet" href="./css/tailwind-build.css"> -->
-    <link rel="stylesheet" href="css/index.css" />
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://uideck.com/play/">
+<meta property="og:title" content="Play - Free Open Source HTML Bootstrap Template by UIdeck">
+<meta property="og:description" content="Play - Free Open Source HTML Bootstrap Template by UIdeck Team">
+<meta property="og:image" content="https://uideck.com/wp-content/uploads/2021/09/play-meta-bs.jpg">
 
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
-        integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://uideck.com/play/">
+<meta property="twitter:title" content="Play - Free Open Source HTML Bootstrap Template by UIdeck">
+<meta property="twitter:description" content="Play - Free Open Source HTML Bootstrap Template by UIdeck Team">
+<meta property="twitter:image" content="https://uideck.com/wp-content/uploads/2021/09/play-meta-bs.jpg">
 
-<body class="tw-flex tw-min-h-[100vh] tw-flex-col tw-bg-[#181B20] tw-text-white">
+    <!--====== Favicon Icon ======-->
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.svg"
+      type="image/svg"
+    />
 
+    <!-- ===== All CSS files ===== -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <link rel="stylesheet" href="assets/css/lineicons.css" />
+    <link rel="stylesheet" href="assets/css/ud-styles.css" />
+  </head>
+  <body>
+    <!-- ====== Header Start ====== -->
+    <header class="ud-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <nav class="navbar navbar-expand-lg">
+              <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo/logo.svg" alt="Logo" width="60" height="60" />
+              </a>
+              <button class="navbar-toggler">
+                <span class="toggler-icon"> </span>
+                <span class="toggler-icon"> </span>
+                <span class="toggler-icon"> </span>
+              </button>
 
-    <header class="lg:tw-justify-around  tw-max-w-lg:tw-px-4 tw-max-w-lg:tw-mr-auto tw-absolute tw-top-0 tw-z-20 tw-flex tw-h-[60px] tw-w-full tw-bg-opacity-0 tw-px-[5%] 
-                    tw-text-white">
-        <a class="tw-h-[64px] tw-w-[64px] tw-p-[4px] tw-flex tw-items-center tw-gap-2" href="">
-            <img src="./assets/teachair-logo.svg" alt="Teachair logo" class="tw-object tw-h-full tw-w-full" />
-            <span class="tw-text-xl tw-font-semibold tw-ml-2">Teachair</span>
-        </a>
-        <div class="collapsible-header tw-font-mono animated-collapse max-lg:tw-shadow-md" id="collapsed-header-items">
-            <div
-                class="tw-flex tw-h-full tw-w-max tw-gap-5 tw-text-base tw-text-white max-lg:tw-mt-[30px] max-lg:tw-flex-col max-lg:tw-place-items-end max-lg:tw-gap-5 lg:tw-mx-auto lg:tw-place-items-center">
-                <a class="header-links" href="#features">Возможности</a>
-                <a class="header-links" href="#pricing">Тарифы</a>
-                <a class="header-links" href="#testimonials">Отзывы</a>
-                <a class="header-links" href="#articles">Статьи</a>
-            </div>
-            <div
-                class="tw-mx-4 tw-flex tw-place-items-center tw-gap-[20px] tw-text-base max-md:tw-w-full max-md:tw-flex-col max-md:tw-place-content-center">
-                <a href="https://my.teachair.app" aria-label="signup"
-                    class="tw-rounded-full tw-bg-secondary tw-px-3 tw-py-2 tw-text-white tw-transition-transform tw-duration-[0.3s] hover:tw-translate-x-2">
-                    <span>Начать</span>
-                    <i class="bi bi-arrow-right"></i>
+              <div class="navbar-collapse">
+                <ul id="nav" class="navbar-nav mx-auto">
+                  <li class="nav-item">
+                    <a class="ud-menu-scroll" href="#home">Главная</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="ud-menu-scroll" href="#features">Функции</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="ud-menu-scroll" href="#pricing">Тарифы</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="ud-menu-scroll" href="#faq">Документация</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="navbar-btn d-none d-sm-inline-block">
+                <a class="ud-main-btn ud-white-btn" href="https://my.teachair.app">
+                  Начать <i class="lni lni-arrow-right"></i>
                 </a>
-            </div>
+              </div>
+            </nav>
+          </div>
         </div>
-        <button class="bi bi-list tw-absolute tw-right-3 tw-top-3 tw-z-50 tw-text-3xl tw-text-white lg:tw-hidden"
-            onclick="toggleHeader()" aria-label="menu" id="collapse-btn"></button>
+      </div>
     </header>
+    <!-- ====== Header End ====== -->
 
-    <section
-        class="tw-relative tw-flex tw-min-h-[100vh] hero-section tw-w-full tw-max-w-[100vw] tw-flex-col tw-overflow-hidden max-md:tw-mt-[50px]"
-        id="hero-section">
-        <div
-            class="hero-bg-gradient tw-flex tw-h-full tw-min-h-[100vh] tw-w-full tw-flex-col tw-place-content-center tw-gap-6 tw-p-[5%] max-lg:tw-p-4  max-xl:tw-place-items-center">
-            <div class="tw-flex tw-flex-col tw-place-content-center tw-items-center">
-                <div
-                    class="reveal-up tw-text-center gradient-text tw-text-6xl tw-font-semibold tw-uppercase tw-leading-[80px] max-lg:tw-text-4xl max-md:tw-leading-snug">
-                    <span class=""> Современная платформа </span>
-                    <br />
-                    <span class=""> для обучения </span>
-                </div>
-                <div class="reveal-up tw-font-mono tw-mt-10 tw-max-w-[450px] tw-p-2 tw-text-center max-lg:tw-max-w-full">
-                    с интеграцией в экосистему Telegram и функциями Искусственного интеллекта (AI)
-                </div>
+    <!-- ====== Hero Start ====== -->
+    <section class="ud-hero" id="home">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="ud-hero-content wow fadeInUp" data-wow-delay=".2s">
+              <h1 class="ud-hero-title">
+                Современная платформа для преподавателей и студентов
+              </h1>
+              <p class="ud-hero-desc">
+                с интеграцией в экосистему Telegram и функциями Искусственного интеллекта (AI)
+              </p>
+              <ul class="ud-hero-buttons">
+                <li>
+                  <a href="https://t.me/teachair_bot" rel="nofollow noopener" target="_blank" class="ud-main-btn ud-white-btn">
+                    Открыть в Telegram
+                  </a>
+                </li>
+                <li>
+                  <a href="https://my.teachair.app" rel="nofollow noopener" target="_blank" class="ud-main-btn ud-link-btn">
+                    В браузере <i class="lni lni-arrow-right"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="ud-hero-image wow fadeInUp" data-wow-delay=".25s">
+              <img src="assets/images/home/screen-main.webp" alt="hero-image" style="max-width: 700px" />
+              <img
+                src="assets/images/hero/dotted-shape.svg"
+                alt="shape"
+                class="shape shape-1"
+              />
+              <img
+                src="assets/images/hero/dotted-shape.svg"
+                alt="shape"
+                class="shape shape-2"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ====== Hero End ====== -->
 
-                <div class="reveal-up tw-mt-4 tw-flex tw-place-items-center tw-gap-4 tw-overflow-hidden tw-p-2">
-                    <a class="btn tw-transition-transform tw-duration-[0.3s] hover:tw-scale-x-[1.03]"
-                        href="https://t.me/teachair_bot">
-                        Открыть в Telegram
+    <!-- ====== Features Start ====== -->
+    <section id="features" class="ud-features">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="ud-section-title">
+              <h2> Преимущества Teachair</h2>
+              <p>
+                Основные функции, за которые выбирают нашу платформу
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xl-3 col-lg-3 col-sm-6">
+            <div class="ud-single-feature wow fadeInUp" data-wow-delay=".1s">
+              <div class="ud-feature-icon">
+                <i class="lni lni-gift"></i>
+              </div>
+              <div class="ud-feature-content">
+                <h3 class="ud-feature-title">Free and Open-Source</h3>
+                <p class="ud-feature-desc">
+                  Lorem Ipsum is simply dummy text of the printing and industry.
+                </p>
+                <a href="javascript:void(0)" class="ud-feature-link">
+                  Learn More
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-sm-6">
+            <div class="ud-single-feature wow fadeInUp" data-wow-delay=".15s">
+              <div class="ud-feature-icon">
+                <i class="lni lni-move"></i>
+              </div>
+              <div class="ud-feature-content">
+                <h3 class="ud-feature-title">Multipurpose Template</h3>
+                <p class="ud-feature-desc">
+                  Lorem Ipsum is simply dummy text of the printing and industry.
+                </p>
+                <a href="javascript:void(0)" class="ud-feature-link">
+                  Learn More
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-sm-6">
+            <div class="ud-single-feature wow fadeInUp" data-wow-delay=".2s">
+              <div class="ud-feature-icon">
+                <i class="lni lni-layout"></i>
+              </div>
+              <div class="ud-feature-content">
+                <h3 class="ud-feature-title">High-quality Design</h3>
+                <p class="ud-feature-desc">
+                  Lorem Ipsum is simply dummy text of the printing and industry.
+                </p>
+                <a href="javascript:void(0)" class="ud-feature-link">
+                  Learn More
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-sm-6">
+            <div class="ud-single-feature wow fadeInUp" data-wow-delay=".25s">
+              <div class="ud-feature-icon">
+                <i class="lni lni-layers"></i>
+              </div>
+              <div class="ud-feature-content">
+                <h3 class="ud-feature-title">All Essential Elements</h3>
+                <p class="ud-feature-desc">
+                  Lorem Ipsum is simply dummy text of the printing and industry.
+                </p>
+                <a href="javascript:void(0)" class="ud-feature-link">
+                  Learn More
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ====== Features End ====== -->
+
+    <!-- ====== About Start ====== -->
+    <section id="about" class="ud-about">
+      <div class="container">
+        <div class="ud-about-wrapper wow fadeInUp" data-wow-delay=".2s">
+          <div class="ud-about-content-wrapper">
+            <div class="ud-about-content">
+              <span class="tag">Преподавателям</span>
+              <h2>Brilliant Toolkit to Build Nextgen Website Faster.</h2>
+              <p>
+                The main ‘thrust’ is to focus on educating attendees on how to
+                best protect highly vulnerable business applications with
+                interactive panel discussions and roundtables led by subject
+                matter experts.
+              </p>
+
+              <p>
+                The main ‘thrust’ is to focus on educating attendees on how to
+                best protect highly vulnerable business applications with
+                interactive panel.
+              </p>
+              <a href="javascript:void(0)" class="ud-main-btn">Learn More</a>
+            </div>
+          </div>
+          <div class="ud-about-image">
+            <img src="assets/images/about/about-image.svg" alt="about-image" />
+          </div>
+        </div>
+      </div>
+      <div class="container" style="margin-top: 50px;">
+        <div class="ud-about-wrapper wow fadeInUp" data-wow-delay=".2s">
+          <div class="ud-about-content-wrapper">
+            <div class="ud-about-content">
+              <span class="tag">Студентам</span>
+              <h2>Brilliant Toolkit to Build Nextgen Website Faster.</h2>
+              <p>
+                The main ‘thrust’ is to focus on educating attendees on how to
+                best protect highly vulnerable business applications with
+                interactive panel discussions and roundtables led by subject
+                matter experts.
+              </p>
+
+              <p>
+                The main ‘thrust’ is to focus on educating attendees on how to
+                best protect highly vulnerable business applications with
+                interactive panel.
+              </p>
+              <a href="javascript:void(0)" class="ud-main-btn">Learn More</a>
+            </div>
+          </div>
+          <div class="ud-about-image">
+            <img src="assets/images/about/about-image.svg" alt="about-image" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ====== About End ====== -->
+
+    <!-- ====== Pricing Start ====== -->
+    <section id="pricing" class="ud-pricing">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="ud-section-title mx-auto text-center">
+              <span>Pricing</span>
+              <h2>Our Pricing Plans</h2>
+              <p>
+                There are many variations of passages of Lorem Ipsum available
+                but the majority have suffered alteration in some form.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-0 align-items-center justify-content-center">
+          <div class="col-lg-4 col-md-6 col-sm-10">
+            <div
+              class="ud-single-pricing first-item wow fadeInUp"
+              data-wow-delay=".15s"
+            >
+              <div class="ud-pricing-header">
+                <h3>STARTING FROM</h3>
+                <h4>$ 19.99/mo</h4>
+              </div>
+              <div class="ud-pricing-body">
+                <ul>
+                  <li>5 User</li>
+                  <li>All UI components</li>
+                  <li>Lifetime access</li>
+                  <li>Free updates</li>
+                  <li>Use on 1 (one) project</li>
+                  <li>4 Months support</li>
+                </ul>
+              </div>
+              <div class="ud-pricing-footer">
+                <a href="javascript:void(0)" class="ud-main-btn ud-border-btn">
+                  Purchase Now
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-10">
+            <div
+              class="ud-single-pricing active wow fadeInUp"
+              data-wow-delay=".1s"
+            >
+              <span class="ud-popular-tag">POPULAR</span>
+              <div class="ud-pricing-header">
+                <h3>STARTING FROM</h3>
+                <h4>$ 30.99/mo</h4>
+              </div>
+              <div class="ud-pricing-body">
+                <ul>
+                  <li>5 User</li>
+                  <li>All UI components</li>
+                  <li>Lifetime access</li>
+                  <li>Free updates</li>
+                  <li>Use on 1 (one) project</li>
+                  <li>4 Months support</li>
+                </ul>
+              </div>
+              <div class="ud-pricing-footer">
+                <a href="javascript:void(0)" class="ud-main-btn ud-white-btn">
+                  Purchase Now
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-10">
+            <div
+              class="ud-single-pricing last-item wow fadeInUp"
+              data-wow-delay=".15s"
+            >
+              <div class="ud-pricing-header">
+                <h3>STARTING FROM</h3>
+                <h4>$ 70.99/mo</h4>
+              </div>
+              <div class="ud-pricing-body">
+                <ul>
+                  <li>5 User</li>
+                  <li>All UI components</li>
+                  <li>Lifetime access</li>
+                  <li>Free updates</li>
+                  <li>Use on 1 (one) project</li>
+                  <li>4 Months support</li>
+                </ul>
+              </div>
+              <div class="ud-pricing-footer">
+                <a href="javascript:void(0)" class="ud-main-btn ud-border-btn">
+                  Purchase Now
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ====== Pricing End ====== -->
+
+    <!-- ====== FAQ Start ====== -->
+    <section id="faq" class="ud-faq">
+      <div class="shape">
+        <img src="assets/images/faq/shape.svg" alt="shape" />
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="ud-section-title text-center mx-auto">
+              <span>FAQ</span>
+              <h2>Any Questions? Answered</h2>
+              <p>
+                There are many variations of passages of Lorem Ipsum available
+                but the majority have suffered alteration in some form.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="ud-single-faq wow fadeInUp" data-wow-delay=".1s">
+              <div class="accordion">
+                <button
+                  class="ud-faq-btn collapsed"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                >
+                  <span class="icon flex-shrink-0">
+                    <i class="lni lni-chevron-down"></i>
+                  </span>
+                  <span>How to use UIdeck?</span>
+                </button>
+                <div id="collapseOne" class="accordion-collapse collapse">
+                  <div class="ud-faq-body">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a
+                    type specimen book.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="ud-single-faq wow fadeInUp" data-wow-delay=".15s">
+              <div class="accordion">
+                <button
+                  class="ud-faq-btn collapsed"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                >
+                  <span class="icon flex-shrink-0">
+                    <i class="lni lni-chevron-down"></i>
+                  </span>
+                  <span>How to download icons from Lineicons?</span>
+                </button>
+                <div id="collapseTwo" class="accordion-collapse collapse">
+                  <div class="ud-faq-body">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a
+                    type specimen book.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="ud-single-faq wow fadeInUp" data-wow-delay=".2s">
+              <div class="accordion">
+                <button
+                  class="ud-faq-btn collapsed"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                >
+                  <span class="icon flex-shrink-0">
+                    <i class="lni lni-chevron-down"></i>
+                  </span>
+                  <span>Is GrayGrids part of UIdeck?</span>
+                </button>
+                <div id="collapseThree" class="accordion-collapse collapse">
+                  <div class="ud-faq-body">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a
+                    type specimen book.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="ud-single-faq wow fadeInUp" data-wow-delay=".1s">
+              <div class="accordion">
+                <button
+                  class="ud-faq-btn collapsed"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour"
+                >
+                  <span class="icon flex-shrink-0">
+                    <i class="lni lni-chevron-down"></i>
+                  </span>
+                  <span>Can I use this template for commercial project?</span>
+                </button>
+                <div id="collapseFour" class="accordion-collapse collapse">
+                  <div class="ud-faq-body">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a
+                    type specimen book.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="ud-single-faq wow fadeInUp" data-wow-delay=".15s">
+              <div class="accordion">
+                <button
+                  class="ud-faq-btn collapsed"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFive"
+                >
+                  <span class="icon flex-shrink-0">
+                    <i class="lni lni-chevron-down"></i>
+                  </span>
+                  <span>Do you have plan releasing Play Pro?</span>
+                </button>
+                <div id="collapseFive" class="accordion-collapse collapse">
+                  <div class="ud-faq-body">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a
+                    type specimen book.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="ud-single-faq wow fadeInUp" data-wow-delay=".2s">
+              <div class="accordion">
+                <button
+                  class="ud-faq-btn collapsed"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseSix"
+                >
+                  <span class="icon flex-shrink-0">
+                    <i class="lni lni-chevron-down"></i>
+                  </span>
+                  <span>Where and how to host this template?</span>
+                </button>
+                <div id="collapseSix" class="accordion-collapse collapse">
+                  <div class="ud-faq-body">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a
+                    type specimen book.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ====== FAQ End ====== -->
+
+    <!-- ====== Footer Start ====== -->
+    <footer class="ud-footer wow fadeInUp" data-wow-delay=".15s">
+      <div class="shape shape-1">
+        <img src="assets/images/footer/shape-1.svg" alt="shape" />
+      </div>
+      <div class="shape shape-2">
+        <img src="assets/images/footer/shape-2.svg" alt="shape" />
+      </div>
+      <div class="shape shape-3">
+        <img src="assets/images/footer/shape-3.svg" alt="shape" />
+      </div>
+      <div class="ud-footer-widgets">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-3 col-lg-4 col-md-6">
+              <div class="ud-widget">
+                <a href="index.html" class="ud-footer-logo">
+                  <img src="assets/images/logo/logo-2.svg" alt="logo" />
+                </a>
+                <p class="ud-widget-desc">
+                  We create digital experiences for brands and companies by
+                  using technology.
+                </p>
+                <ul class="ud-widget-socials">
+                  <li>
+                    <a href="https://twitter.com/MusharofChy">
+                      <i class="lni lni-facebook-filled"></i>
                     </a>
-                    <a class="btn !tw-bg-white !tw-text-secondary tw-transition-transform tw-duration-[0.3s] hover:tw-scale-x-[1.03]"
-                        href="https://my.teachair.app/">
-                        <span>В браузере</span>
+                  </li>
+                  <li>
+                    <a href="https://twitter.com/MusharofChy">
+                      <i class="lni lni-twitter-filled"></i>
                     </a>
-                </div>
-
-            </div>
-
-            <div class="reveal-up tw-flex tw-w-full tw-place-content-center tw-place-items-center"
-                id="dashboard-container">
-
-                <div class="tw-overflow-hidden tw-shadow-xl tw-shadow-[#443e437c] tw-rounded-2xl"
-                    id="dashboard">
-                    <img src="./assets/images/home/screen-main.webp" alt="dashboard"
-                        class="tw-h-full tw-w-full tw-object-cover  tw-max-w-[600px]" />
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="features"
-        class="tw-relative tw-flex tw-w-full tw-max-w-[100vw] tw-flex-col tw-place-content-center tw-place-items-center tw-overflow-hidden tw-py-12">
-        <div class="tw-flex tw-flex-col tw-place-items-center tw-gap-5">
-            <div class="reveal-up tw-flex tw-flex-col tw-gap-3 tw-text-center">
-                <h2 class="tw-text-xl tw-text-primary">
-                    Функции, за которые выбирают Teachair
-                </h2>
-            </div>
-            <div class="tw-mt-6 tw-flex tw-justify-center tw-gap-8 max-lg:tw-flex-col">
-                <div class="reveal-up tw-flex tw-h-[250px] tw-w-[350px] tw-flex-col tw-gap-2 tw-p-4 tw-text-center">
-                    <i class="bi bi-cpu-fill tw-text-5xl tw-text-primary"></i>
-                    <h3 class="tw-text-2xl tw-font-semibold">AI Ассистент</h3>
-                    <div class="tw-text-gray-300">
-                        Встроенный AI для автоматического создания заданий, корректировки существующих заданий или распознавания текста
-                        с изображений
-                    </div>
-                </div>
-                <div class="reveal-up tw-flex tw-h-[250px] tw-w-[350px] tw-flex-col tw-gap-2 tw-p-4 tw-text-center">
-                    <i class="bi bi-telegram tw-text-5xl tw-text-primary"></i>
-                    <h3 class="tw-text-2xl tw-font-semibold">Интеграция с Telegram</h3>
-                    <div class="tw-text-gray-300">
-                        Глубокая интеграция с экосистемой Telegram для мгновенных уведомлений и удобного доступа к
-                        платформе без лишних паролей, регистрации и СМС
-                    </div>
-                </div>
-                <div class="reveal-up tw-flex tw-h-[250px] tw-w-[350px] tw-flex-col tw-gap-2 tw-p-4 tw-text-center">
-                    <i class="bi bi-pencil-square tw-text-5xl tw-text-primary"></i>
-                    <h3 class="tw-text-2xl tw-font-semibold">Мощный редактор</h3>
-                    <div class="tw-text-gray-300">
-                        Создавайте любые виды заданий: от простых тестов до сложных интерактивных упражнений
-                        с поддержкой мультимедиа
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="teachers" class="tw-relative tw-flex tw-w-full tw-max-w-[100vw] tw-flex-col tw-place-content-center 
-            tw-place-items-center tw-overflow-hidden tw-p-6">
-
-        <div class="reveal-up tw-flex tw-w-full tw-place-content-center tw-place-items-center
-                        tw-gap-[10%] max-lg:tw-flex-col max-lg:tw-gap-10">
-
-            <div class="tw-flex tw-w-full tw-max-w-[850px]">
-                <div class="tw-w-full tw-overflow-hidden tw-rounded-2xl tw-shadow-lg tw-shadow-[rgba(170,49,233,0.44021358543417366)]">
-                    <div class="tw-relative tw-w-full" style="padding-bottom: 53%;">
-                        <iframe class="tw-absolute tw-inset-0 tw-h-full tw-w-full" src="https://www.youtube.com/embed/mvhmCKNQfu8?si=hjfd67sRTcLnPpG8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>    
-                    </div>
-                </div>
-            </div>
-            <div class="tw-mt-6 tw-flex tw-max-w-[450px] tw-flex-col tw-gap-4">
-                <div class="tw-mt-4 tw-flex tw-flex-col tw-gap-6">
-
-
-                    <div class="tw-flex tw-flex-col tw-gap-3">
-                        <h4 class="tw-text-xl tw-font-medium">
-                            <i class="bi bi-check-all !tw-text-2xl"></i>
-                            Организация материалов
-                        </h4>
-                        <div class="tw-flex tw-flex-col tw-gap-4 tw-pl-4">
-                            <div>
-                                <p class="tw-text-gray-300">
-                                    Теги для удобного поиска заданий
-                                </p>
-                            </div>
-                            <div>
-                                <p class="tw-text-gray-300">
-                                    Шаблоны для быстрой отправки заданий студентам
-                                </p>
-                            </div>
-                            <div>
-                                <p class="tw-text-gray-300">
-                                    Папки для организации хранения материалов без ограничений
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="tw-flex tw-flex-col tw-gap-3">
-                        <h4 class="tw-text-xl tw-font-medium">
-                            <i class="bi bi-check-all !tw-text-2xl"></i>
-                            Удобная работа со студентами
-                        </h4>
-                        <div class="tw-flex tw-flex-col tw-gap-4 tw-pl-4">
-                            <div>
-                                <p class="tw-text-gray-300">
-                                    Приглашайте студентов через Telegram
-                                </p>
-                            </div>
-                            <div>
-                                <p class="tw-text-gray-300">
-                                    Управляйте балансом: учет оплат и уроков
-                                </p>
-                            </div>
-                            <div>
-                                <p class="tw-text-gray-300">
-                                    Отслеживайте прогресс студентов, проверяйте работы и оставляйте обратную связь
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="tw-flex tw-flex-col tw-gap-3">
-                        <h4 class="tw-text-xl tw-font-medium">
-                            <i class="bi bi-check-all !tw-text-2xl"></i>
-                            Персональные настройки
-                        </h4>
-                        <div class="tw-flex tw-flex-col tw-gap-4 tw-pl-4">
-                            <div>
-                                <p class="tw-text-gray-300">
-                                    Поддержка тёмной и светлой темы оформлениы
-                                </p>
-                            </div>
-                            <div>
-                                <p class="tw-text-gray-300">
-                                    Выбор языка интерфейса
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-    <section id="students" class="tw-relative tw-flex tw-w-full tw-max-w-[100vw] tw-flex-col tw-place-content-center 
-            tw-place-items-center tw-overflow-hidden tw-p-6">
-        <div class="reveal-up tw-flex tw-flex-col tw-gap-3 tw-text-center">
-            <h3 class="tw-text-xl tw-text-primary">
-                Для студентов
-            </h3>
-        </div>
-
-        <div class="reveal-up tw-flex tw-w-full tw-place-content-center tw-place-items-center
-                        tw-gap-[10%] max-lg:tw-flex-col max-lg:tw-gap-10">
-
-            <div class="tw-mt-6 tw-flex tw-flex-col tw-gap-4">
-
-                <div class="tw-mt-4 tw-flex tw-flex-col tw-gap-6">
-                    <div class="tw-flex tw-flex-col tw-gap-3">
-                        <h4 class="tw-text-xl tw-font-medium">
-                            <i class="bi bi-check-all !tw-text-2xl"></i>
-                            Удобная работа с преподавателями
-                        </h4>
-
-                        <div class="tw-flex tw-flex-col tw-gap-4 tw-pl-4">
-                            <div>
-                                <p class="tw-text-gray-300">
-                                    Возможность одновременной работы с несколькими преподавателями
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="tw-flex tw-flex-col tw-gap-4 tw-pl-4">
-                            <div>
-                                <p class="tw-text-gray-300">
-                                    Информация о количестве оплаченных и списанных занятий
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="tw-flex tw-flex-col tw-gap-4 tw-pl-4">
-                            <div>
-                                <p class="tw-text-gray-300">
-                                    Отслеживание прогресса в выполнении заданий
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="tw-flex tw-flex-col tw-gap-3">
-                        <h4 class="tw-text-xl tw-font-medium">
-                            <i class="bi bi-check-all !tw-text-2xl"></i>
-                            Интерактивные задания
-                        </h4>
-                        <div class="tw-flex tw-flex-col tw-gap-4 tw-pl-4">
-                            <div>
-                                <p class="tw-text-gray-300">
-                                    Мгновенные уведомления в Telegram о новых работах
-                                </p>
-                            </div>
-                        </div>
-                        <div class="tw-flex tw-flex-col tw-gap-4 tw-pl-4">
-                            <div>
-                                <p class="tw-text-gray-300">
-                                    Доступ через приложение или браузер
-                                </p>
-                            </div>
-                        </div>
-                        <div class="tw-flex tw-flex-col tw-gap-4 tw-pl-4">
-                            <div>
-                                <p class="tw-text-gray-300">
-                                    Пошаговое выполнение заданий с проверкой ответов
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="tw-flex tw-flex-col tw-gap-3">
-                        <h4 class="tw-text-xl tw-font-medium">
-                            <i class="bi bi-check-all !tw-text-2xl"></i>
-                            Обратная связь
-                        </h4>
-                        <div class="tw-flex tw-flex-col tw-gap-4 tw-pl-4">
-                            <div>
-                                <p class="tw-text-gray-300">
-                                    Оценка работы и комментарии для преподавателя
-                                </p>
-                            </div>
-                        </div>
-                        <div class="tw-flex tw-flex-col tw-gap-4 tw-pl-4">
-                            <div>
-                                <p class="tw-text-gray-300">
-                                    Возможность комментирования отдельных заданий
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="tw-flex tw-justify-center">
-                <div class="tw-overflow-hidden tw-rounded-2xl">
-                    <div class="tw-relative" style="width: 350px; padding-bottom: 201.5%;">
-                        <iframe class="tw-absolute tw-inset-0 tw-h-full tw-w-full" src="https://www.youtube.com/embed/ULEgOJUu5_A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>    
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-
-
-    <!--section
-        class="tw-relative tw-flex tw-min-h-[100vh] hero-section tw-w-full tw-max-w-[100vw] tw-flex-col tw-overflow-hidden max-md:tw-mt-[50px]"
-        id="hero-section">
-        <div
-            class="hero-bg-gradient tw-flex tw-h-full tw-min-h-[100vh] tw-w-full tw-flex-col tw-place-content-center tw-gap-6 tw-p-[5%] max-lg:tw-p-4  max-xl:tw-place-items-center">
-
-
-            <div class="reveal-up tw-flex tw-w-full tw-place-content-center tw-place-items-center"
-                id="dashboard-container">
-
-                <div class="tw-flex tw-max-h-[750px] tw-min-h-[450px] tw-w-full tw-min-w-[350px] tw-max-w-[950px] tw-rounded-2xl 
-                                    tw-overflow-hidden tw-shadow-xl tw-shadow-[#443e437c]
-                                    max-lg:tw-h-fit max-lg:tw-max-h-[320px] max-lg:tw-min-h-[150px] max-lg:tw-w-[320px]"
-                    id="dashboard">
-                    <img src="./assets/images/Teachair-UX.png" alt="dashboard"
-                        class="tw-h-full tw-w-full tw-object-cover  max-lg:tw-object-contain" />
-                </div>
-            </div>
-        </div>
-    </section-->
-
-
-
-    <section class="tw-mt-5 tw-flex tw-w-full tw-flex-col tw-place-items-center tw-p-[2%]" id="pricing">
-        <h3 class="tw-text-3xl tw-font-medium tw-text-primary max-md:tw-text-2xl">
-            Простая система оплаты
-        </h3>
-        <!-- pricing -->
-        <div class="tw-mt-10 tw-flex tw-flex-wrap tw-place-content-center tw-gap-8 max-lg:tw-flex-col">
-            <div
-                class="reveal-up tw-flex tw-border-[#333a44] tw-bg-[#1d2127] tw-border-[1px] tw-w-[380px] tw-flex-col tw-place-items-center tw-gap-2 tw-rounded-lg tw-p-8 tw-shadow-xl max-lg:tw-w-[320px]">
-                <h3 class="">
-                    <span class="tw-text-5xl tw-font-semibold">Free</span>
-                </h3>
-                <p class="tw-mt-3 tw-text-center tw-text-gray-300">
-                    Начните пользоваться бесплатно
-                </p>
-                <hr />
-                <ul class="tw-mt-4 tw-flex tw-flex-col tw-gap-2 tw-text-start tw-text-lg tw-text-gray-200">
-                    <li class="tw-flex tw-items-center tw-gap-2">
-                        <i class="bi bi-check-circle-fill tw-text-primary"></i>
-                        Доступ через Telegram
-                    </li>
-                    <li class="tw-flex tw-items-center tw-gap-2">
-                        <i class="bi bi-check-circle-fill tw-text-primary"></i>
-                        До 3 студентов
-                    </li>
-                    <li class="tw-flex tw-items-center tw-gap-2">
-                        <i class="bi bi-check-circle-fill tw-text-primary"></i>
-                        Умный редактор
-                    </li>
-                    <li class="tw-flex tw-items-center tw-gap-2">
-                        <i class="bi bi-check-circle-fill tw-text-primary"></i>
-                        Организация материалов
-                    </li>
+                  </li>
+                  <li>
+                    <a href="https://twitter.com/MusharofChy">
+                      <i class="lni lni-instagram-filled"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://twitter.com/MusharofChy">
+                      <i class="lni lni-linkedin-original"></i>
+                    </a>
+                  </li>
                 </ul>
-                <a href="https://t.me/teachair_bot"
-                    class="btn tw-mt-8 !tw-w-full tw-transition-transform tw-duration-[0.3s] hover:tw-scale-x-[1.02]">
-                    Начать
-                </a>
+              </div>
             </div>
-            <div
-                class="reveal-up tw-flex tw-bg-[#1d2127] tw-w-[380px] tw-flex-col tw-place-items-center tw-gap-2 tw-rounded-lg tw-border-2 tw-border-primary tw-p-8 tw-shadow-xl max-lg:tw-w-[320px]">
-                <h3 class="">
-                    <span class="tw-text-5xl tw-font-semibold">PRO</span>
-                </h3>
-                <p class="tw-mt-3 tw-text-center tw-text-gray-300">
-                    Для профессиональной работы
-                </p>
-                <hr />
-                <ul class="tw-mt-4 tw-flex tw-flex-col tw-gap-2 tw-text-start tw-text-lg tw-text-gray-200">
-                    <li class="tw-flex tw-items-center tw-gap-2">
-                        <i class="bi bi-check-circle-fill tw-text-primary"></i>
-                        Все функции Free
-                    </li>
-                    <li class="tw-flex tw-items-center tw-gap-2">
-                        <i class="bi bi-check-circle-fill tw-text-primary"></i>
-                        Без ограничений
-                    </li>
-                    <li class="tw-flex tw-items-center tw-gap-2">
-                        <i class="bi bi-check-circle-fill tw-text-primary"></i>
-                        AI Ассистент
-                    </li>
-                    <li class="tw-flex tw-items-center tw-gap-2">
-                        <i class="bi bi-check-circle-fill tw-text-primary"></i>
-                        Техническая поддержка
-                    </li>
+
+            <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6">
+              <div class="ud-widget">
+                <h5 class="ud-widget-title">About Us</h5>
+                <ul class="ud-widget-links">
+                  <li>
+                    <a href="javascript:void(0)">Home</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">Features</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">About</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">Testimonial</a>
+                  </li>
                 </ul>
-                <a href="https://buy.stripe.com/bJe5kD8FA0LpeHN6BP9ws00" target="_blank"
-                    class="btn tw-mt-8 !tw-w-full tw-transition-transform tw-duration-[0.3s] hover:tw-scale-x-[1.02]">
-                    Подключить
-                </a>
+              </div>
             </div>
-            <div
-                class="reveal-up tw-flex tw-border-[#333a44] tw-bg-[#1d2127] tw-border-[1px] tw-w-[380px] tw-flex-col tw-place-items-center tw-gap-2 tw-rounded-lg tw-p-8 tw-shadow-xl max-lg:tw-w-[320px]">
-                <h3 class="">
-                    <span class="tw-text-5xl tw-font-semibold">Enterprise</span>
-                </h3>
-                <p class="tw-mt-3 tw-text-center tw-text-gray-300">
-                    Для образовательных учреждений
-                </p>
-                <hr />
-                <ul class="tw-mt-4 tw-flex tw-flex-col tw-gap-2 tw-text-start tw-text-lg tw-text-gray-200">
-                    <li class="tw-flex tw-items-center tw-gap-2">
-                        <i class="bi bi-check-circle-fill tw-text-primary"></i>
-                        Все функции PRO
-                    </li>
-                    <li class="tw-flex tw-items-center tw-gap-2">
-                        <i class="bi bi-check-circle-fill tw-text-primary"></i>
-                        API доступ
-                    </li>
-                    <li class="tw-flex tw-items-center tw-gap-2">
-                        <i class="bi bi-check-circle-fill tw-text-primary"></i>
-                        Индивидуальная настройка
-                    </li>
-                    <li class="tw-flex tw-items-center tw-gap-2">
-                        <i class="bi bi-check-circle-fill tw-text-primary"></i>
-                        Приоритетная поддержка
-                    </li>
+            <div class="col-xl-2 col-lg-3 col-md-6 col-sm-6">
+              <div class="ud-widget">
+                <h5 class="ud-widget-title">Features</h5>
+                <ul class="ud-widget-links">
+                  <li>
+                    <a href="javascript:void(0)">How it works</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">Privacy policy</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">Terms of service</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">Refund policy</a>
+                  </li>
                 </ul>
-                <a href="https://buy.stripe.com/bJe28rbRM2Tx2Z5gcp9ws01" target="_blank"
-                    class="btn tw-mt-8 !tw-w-full tw-transition-transform tw-duration-[0.3s] hover:tw-scale-x-[1.02]">
-                    Подключить
-                </a>
+              </div>
             </div>
-        </div>
-    </section>
-
-    <section id="articles"
-        class="tw-mt-5 tw-flex tw-w-full tw-min-h-[80vh] tw-flex-col tw-place-content-center tw-place-items-center tw-p-[2%] max-lg:tw-p-3">
-        <h3 class="reveal-up tw-text-center tw-text-4xl tw-font-medium max-md:tw-text-2xl">
-            Статьи ✨
-        </h3>
-        <div class="reveal-up tw-mt-10 tw-flex tw-flex-wrap tw-place-content-center tw-gap-10 max-lg:tw-flex-col">
-            <a href="/docs/platform-guide.html" target="_blank"
-                class="tw-flex tw-h-[400px] tw-w-[350px] tw-flex-col tw-gap-2 tw-overflow-clip tw-rounded-lg tw-border-[#333a44] tw-bg-[#1d2127] tw-border-[1px] tw-p-4 tw-shadow-xl max-lg:tw-w-[300px]">
-                <div class="tw-h-[200px] tw-w-full tw-overflow-hidden tw-rounded-md">
-                    <img src="./assets/images/home/teacher.jpg" alt="article image"
-                        class="tw-h-full tw-w-full tw-object-cover" srcset="" />
-                </div>
-                <h3 class="tw-text-2xl tw-font-semibold max-md:tw-text-xl">
-                    Инструкция для преподавателей
-                </h3>
-                <p class="tw-mt-2 tw-text-gray-400">
-                    Подробная инструкция по использованию платформы
-                </p>
-                <span>
-                    <span>Подробнее</span>
-                    <i class="bi bi-arrow-right"></i>
-                </span>
-            </a>
-            <a href="/docs/editor-guide.html" target="_blank"
-                class="tw-flex tw-h-[400px] tw-w-[350px] tw-flex-col tw-gap-2 tw-overflow-clip tw-rounded-lg tw-border-[#333a44] tw-bg-[#1d2127] tw-border-[1px] tw-p-4 tw-shadow-xl max-lg:tw-w-[300px]">
-                <div class="tw-h-[200px] tw-w-full tw-overflow-hidden tw-rounded-md">
-                    <img src="./assets/images/home/editor.jpg" alt="article image"
-                        class="tw-h-full tw-w-full tw-object-cover" srcset="" />
-                </div>
-                <h3 class="tw-text-2xl tw-font-semibold max-md:tw-text-xl">
-                    Редактор заданий
-                </h3>
-                <p class="tw-mt-2 tw-text-gray-400">
-                    Описание возможностей и функций редактора заданий
-                </p>
-                <span>
-                    <span>Подробнее</span>
-                    <i class="bi bi-arrow-right"></i>
-                </span>
-            </a>
-            <a href="/docs/student-guide.html" target="_blank"
-                class="tw-flex tw-h-[400px] tw-w-[350px] tw-flex-col tw-gap-2 tw-overflow-clip tw-rounded-lg tw-border-[#333a44] tw-bg-[#1d2127] tw-border-[1px] tw-p-4 tw-shadow-xl max-lg:tw-w-[300px]">
-                <div class="tw-h-[200px] tw-w-full tw-overflow-hidden tw-rounded-md">
-                    <img src="./assets/images/home/student.jpg" alt="article image"
-                        class="tw-h-full tw-w-full tw-object-cover" srcset="" />
-                </div>
-                <h3 class="tw-text-2xl tw-font-semibold max-md:tw-text-xl">
-                    Инструкция для студентов
-                </h3>
-                <p class="tw-mt-2 tw-text-gray-400">
-                    Описание возможностей и функций для студентов
-                </p>
-                <span>
-                    <span>Подробнее</span>
-                    <i class="bi bi-arrow-right"></i>
-                </span>
-            </a>
-        </div>
-    </section>
-
-    <footer
-        class="tw-mt-auto tw-font-mono tw-flex tw-w-full tw-place-content-around tw-gap-3 tw-p-[5%] tw-px-[10%] tw-text-white max-md:tw-flex-col">
-        <div class="tw-flex tw-h-full tw-w-[250px] tw-flex-col tw-place-items-center tw-gap-6 max-md:tw-w-full">
-            <img src="./assets/teachair-logo.svg" alt="Teachair logo" srcset="" class="tw-max-w-[120px]" />
-            <div class="tw-text-center">
-                Teachair - cовременная платформа для обучения
+            <div class="col-xl-2 col-lg-3 col-md-6 col-sm-6">
+              <div class="ud-widget">
+                <h5 class="ud-widget-title">Our Products</h5>
+                <ul class="ud-widget-links">
+                  <li>
+                    <a
+                      href="https://lineicons.com/"
+                      rel="nofollow noopner"
+                      target="_blank"
+                      >Lineicons
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://ecommercehtml.com/"
+                      rel="nofollow noopner"
+                      target="_blank"
+                      >Ecommerce HTML</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://ayroui.com/"
+                      rel="nofollow noopner"
+                      target="_blank"
+                      >Ayro UI</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://graygrids.com/"
+                      rel="nofollow noopner"
+                      target="_blank"
+                      >Plain Admin</a
+                    >
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div class="tw-mt-3 tw-text-lg tw-font-semibold">Следите за нами</div>
-            <div class="tw-flex tw-gap-4 tw-text-2xl">
-                <a href="https://t.me/teachair_bot" aria-label="Telegram">
-                    <i class="bi bi-telegram"></i>
-                </a>
-                <a href="https://my.teachair.app/" aria-label="Website">
-                    <i class="bi bi-globe"></i>
-                </a>
-            </div>
+          </div>
         </div>
-
-        <div class="tw-flex tw-h-full tw-w-[250px] tw-flex-col tw-gap-4">
-            <h2 class="tw-text-3xl max-md:tw-text-xl">Ресурсы</h2>
-            <div class="tw-flex tw-flex-col tw-gap-3 max-md:tw-text-sm">
-                <a href="#features" class="footer-link">Возможности</a>
-                <a href="#pricing" class="footer-link">Тарифы</a>
-                <a href="#articles" class="footer-link">Статьи</a>
-                <a href="https://t.me/teachair_bot" class="footer-link">Telegram бот</a>
-                <a href="https://my.teachair.app/" class="footer-link">Личный кабинет</a>
-                <a href="docs/legal.html" class="footer-link">Политика конфиденциальности</a>
+      </div>
+      <div class="ud-footer-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8">
+              <ul class="ud-footer-bottom-left">
+                <li>
+                  <a href="javascript:void(0)">Privacy policy</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">Support policy</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">Terms of service</a>
+                </li>
+              </ul>
             </div>
+            <div class="col-md-4">
+              <p class="ud-footer-bottom-right">
+              </p>
+            </div>
+          </div>
         </div>
+      </div>
     </footer>
-</body>
+    <!-- ====== Footer End ====== -->
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"
-    integrity="sha512-B1lby8cGcAUU3GR+Fd809/ZxgHbfwJMp0jLTVfHiArTuUt++VqSlJpaJvhNtRf3NERaxDNmmxkdx2o+aHd4bvw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/ScrollTrigger.min.js"
-    integrity="sha512-AY2+JxnBETJ0wcXnLPCcZJIJx0eimyhz3OJ55k2Jx4RtYC+XdIi2VtJQ+tP3BaTst4otlGG1TtPJ9fKrAUnRdQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- ====== Back To Top Start ====== -->
+    <a href="javascript:void(0)" class="back-to-top">
+      <i class="lni lni-chevron-up"> </i>
+    </a>
+    <!-- ====== Back To Top End ====== -->
 
-<script src="./index.js"></script>
+    <!-- ====== All Javascript Files ====== -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+      // ==== for menu scroll
+      const pageLink = document.querySelectorAll(".ud-menu-scroll");
 
+      pageLink.forEach((elem) => {
+        elem.addEventListener("click", (e) => {
+          e.preventDefault();
+          document.querySelector(elem.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+            offsetTop: 1 - 60,
+          });
+        });
+      });
+
+      // section menu active
+      function onScroll(event) {
+        const sections = document.querySelectorAll(".ud-menu-scroll");
+        const scrollPos =
+          window.pageYOffset ||
+          document.documentElement.scrollTop ||
+          document.body.scrollTop;
+
+        for (let i = 0; i < sections.length; i++) {
+          const currLink = sections[i];
+          const val = currLink.getAttribute("href");
+          const refElement = document.querySelector(val);
+          const scrollTopMinus = scrollPos + 73;
+          if (
+            refElement.offsetTop <= scrollTopMinus &&
+            refElement.offsetTop + refElement.offsetHeight > scrollTopMinus
+          ) {
+            document
+              .querySelector(".ud-menu-scroll")
+              .classList.remove("active");
+            currLink.classList.add("active");
+          } else {
+            currLink.classList.remove("active");
+          }
+        }
+      }
+
+      window.document.addEventListener("scroll", onScroll);
+    </script>
+  </body>
 </html>

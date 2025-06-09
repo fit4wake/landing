@@ -1,4 +1,5 @@
 # Dependencies
+archive/
 node_modules/
 /.pnp
 .pnp.js
