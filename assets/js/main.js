@@ -6,6 +6,7 @@
     const ud_header = document.querySelector(".ud-header");
     const sticky = ud_header.offsetTop;
     const logo = document.querySelector(".navbar-brand img");
+    const logoText = document.querySelector(".navbar-brand span");
 
     if (window.pageYOffset > sticky) {
       ud_header.classList.add("sticky");
@@ -16,8 +17,10 @@
     // === logo change
     if (ud_header.classList.contains("sticky")) {
       logo.src = "assets/images/logo/logo-2.svg";
+      logoText.classList.remove("text-white");
     } else {
       logo.src = "assets/images/logo/logo.svg";
+      logoText.classList.add("text-white");
     }
 
     // show or hide the back-top-top button
