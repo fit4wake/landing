@@ -1049,11 +1049,6 @@ p {
   }
 }
 
-.ud-single-faq .ud-faq-btn.collapsed span.icon i {
-  -webkit-transform: rotate(0deg);
-  transform: rotate(0deg);
-}
-
 .ud-single-faq .ud-faq-btn span.icon {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1073,10 +1068,6 @@ p {
 }
 
 .ud-single-faq .ud-faq-btn span.icon i {
-  -webkit-transform: rotate(180deg);
-  transform: rotate(180deg);
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
   font-size: 14px;
   font-weight: 700;
 }
