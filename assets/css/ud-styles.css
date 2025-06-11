@@ -674,7 +674,6 @@ p {
 }
 
 .ud-section-title {
-  max-width: 620px;
   margin-bottom: 70px;
 }
 
@@ -689,7 +688,6 @@ p {
   font-weight: 700;
   font-size: 42px;
   line-height: 55px;
-  text-transform: capitalize;
   color: var(--heading-color);
   margin-bottom: 20px;
 }
@@ -704,10 +702,6 @@ p {
     font-size: 16px;
     line-height: 26px;
   }
-}
-
-.ud-single-feature {
-  margin-bottom: 40px;
 }
 
 .ud-single-feature:hover .ud-feature-icon::before {
