@@ -261,16 +261,19 @@
   <section id="about" class="ud-about">
     <div class="container">
 
+      <div class="ud-about-wrapper wow fadeInUp" data-wow-delay=".2s" style="margin: 0;">
+        <div style="width: 100%;position: relative; padding-bottom: calc(1396/2598 * 100%); height: 0;">
+          <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+            src="https://www.youtube.com/embed/mvhmCKNQfu8?si=hjfd67sRTcLnPpG8" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
       <div class="ud-about-wrapper wow fadeInUp" data-wow-delay=".2s">
-        <div class="ud-about-content-wrapper">
+
+        <div class="ud-about-content-wrapper" style="padding-top: 0;">
           <div class="ud-about-content">
-            <div style="width: 100%;position: relative; padding-bottom: calc(1396/2598 * 100%); height: 0;">
-              <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
-                src="https://www.youtube.com/embed/mvhmCKNQfu8?si=hjfd67sRTcLnPpG8" title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
             <span class="tag" style="margin-top: 30px;">Преподавателям</span>
 
             <div class="container">
@@ -697,7 +700,7 @@
 
     window.document.addEventListener("scroll", onScroll);
 
-    // Slideshow functionality
+    // Slideshow
     const slideshowImg = document.getElementById('slide-show-img');
     const images = [
       'assets/images/demo/demo-1.png',
@@ -710,20 +713,31 @@
     ];
     let currentIndex = 0;
 
+    slideshowImg.style.transition = 'opacity 0.5s ease-in-out';
+    slideshowImg.style.opacity = '1';
+
+    const preloadedImages = [];
+    images.forEach(src => {
+      const img = new Image();
+      img.src = src;
+      preloadedImages.push(img);
+    });
+
     function nextSlide() {
       currentIndex = (currentIndex + 1) % images.length;
       slideshowImg.style.opacity = '0';
-
       setTimeout(() => {
-        slideshowImg.src = images[currentIndex];
-        slideshowImg.style.opacity = '1';
+        if (preloadedImages[currentIndex].complete) {
+          slideshowImg.src = images[currentIndex];
+          slideshowImg.style.opacity = '1';
+        } else {
+          preloadedImages[currentIndex].onload = () => {
+            slideshowImg.src = images[currentIndex];
+            slideshowImg.style.opacity = '1';
+          };
+        }
       }, 500);
     }
-
-    // Add CSS transition
-    slideshowImg.style.transition = 'opacity 0.3s ease-in-out';
-
-    // Start slideshow
     setInterval(nextSlide, 5000);
   </script>
 </body>
