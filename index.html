@@ -454,9 +454,17 @@
             <div class="ud-pricing-header">
               <h3>PRO</h3>
             </div>
-            <span class="ud-popular-tag">ПОПУЛЯРНЫЙ</span>
+            <!--span class="ud-popular-tag">ПОПУЛЯРНЫЙ</span-->
             <div class="ud-pricing-header">
-              <h4>$ 4.9 в месяц</h4>
+              <h4 style="text-decoration: line-through; color: rgba(255, 255, 255, 0.6); margin-bottom: 5px;">
+                $ 4.9 в месяц
+              </h4>
+              <h2 style="color: #ffffff; font-weight: bold; margin: 0; text-shadow: 0 2px 4px rgba(0,0,0,0.3);">
+                БЕСПЛАТНО
+              </h2>
+              <p style="font-size: 14px; margin: 10px 0; background: rgba(255, 255, 255, 0.95); color: #212b36; padding: 8px 12px; border-radius: 6px;">
+                До конца акции осталось <span id="countdown-timer" style="font-weight: bold; color: #3056d3;"></span>
+              </p>
             </div>
             <div class="ud-pricing-body">
               <ul>
@@ -466,9 +474,21 @@
               </ul>
             </div>
             <div class="ud-pricing-footer">
-              <a href="https://buy.stripe.com/bJe5kD8FA0LpeHN6BP9ws00" target="_blank" class="ud-main-btn ud-white-btn">
+              <!--a href="https://buy.stripe.com/bJe5kD8FA0LpeHN6BP9ws00" target="_blank" class="ud-main-btn ud-white-btn">
                 Подключить
-              </a>
+              </a-->              
+              <ul class="d-flex flex-column gap-3">
+                <li>
+                  <a href="https://t.me/teachair_bot" target="_blank" class="ud-main-btn ud-border-btn">
+                    Открыть в Telegram
+                  </a>
+                </li>
+                                 <li>
+                   <a href="https://my.teachair.app" target="_blank" style="color: #ffffff!important">
+                     В браузере <i class="lni lni-arrow-right"></i>
+                   </a>
+                 </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -481,14 +501,14 @@
             <div class="ud-pricing-body">
               <ul>
                 <li>Все функции PRO</li>
+                <li>AI Ассистент Plus</li>
                 <li>API интеграция с вашим<br> сайтом или CRM</li>
-                <li>Приоритетная<br> поддержка</li>
               </ul>
             </div>
             <div class="ud-pricing-footer">
               <ul class="d-flex flex-column gap-3">
                 <li>
-                  <a href="https://t.me/teachair_bot?start=enterprise" target="_blank"
+                  <a href="mailto:support@teachair.app?subject=Teachair%20Enterprise" target="_blank"
                     class="ud-main-btn ud-border-btn">
                     Связаться с нами
                   </a>
@@ -739,6 +759,31 @@
       }, 500);
     }
     setInterval(nextSlide, 5000);
+
+    // Countdown timer to tomorrow midnight
+    function updateCountdown() {
+      const now = new Date();
+      const tomorrow = new Date(now);
+      tomorrow.setDate(tomorrow.getDate() + 1);
+      tomorrow.setHours(0, 0, 0, 0);
+      
+      const timeDiff = tomorrow - now;
+      
+      if (timeDiff > 0) {
+        const hours = Math.floor(timeDiff / (1000 * 60 * 60));
+        const minutes = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((timeDiff % (1000 * 60)) / 1000);
+        
+        const countdownElement = document.getElementById('countdown-timer');
+        if (countdownElement) {
+          countdownElement.textContent = `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+        }
+      }
+    }
+    
+    // Update countdown every second
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
   </script>
 </body>
 
