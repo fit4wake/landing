@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://teachair.app/sitemap.xml
