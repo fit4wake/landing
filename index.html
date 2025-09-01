@@ -80,10 +80,7 @@
                   <a class="ud-menu-scroll" href="#pricing">Тарифы</a>
                 </li>
                 <li class="nav-item">
-                  <a class="ud-menu-scroll" href="#faq">Документация</a>
-                </li>
-                <li class="nav-item">
-                  <a href="https://my.teachair.app/#/editor-demo" target="_blank">Демо <i class="lni lni-arrow-right"></i></a>
+                  <a class="ud-menu-scroll" href="#faq">Инструкции</a>
                 </li>
               </ul>
             </div>
@@ -143,7 +140,7 @@
   <!-- ====== Hero End ====== -->
 
   <!-- ====== Mission Statement Start ====== -->
-  <section class="ud-mission-statement" style="padding: 60px 0; background-color: #f8f9fa;">
+  <!--section class="ud-mission-statement" style="padding: 60px 0; background-color: #f8f9fa;">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
@@ -168,7 +165,7 @@
   <!-- ====== Highlights Start ====== -->
   <section id="features" class="ud-features">
     <div class="container">
-      <div class="row">
+      <!--div class="row">
         <div class="col-lg-12">
           <div class="ud-section-title">
             <h2>Как работает Teachair?</h2>
@@ -211,7 +208,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div-->
 
       <div class="row">
         <div class="col-lg-12">
@@ -223,16 +220,29 @@
 
       <div class="row">
         <div class="col-xl-3 col-lg-3 col-sm-6">
+          <div class="ud-single-feature wow fadeInUp" data-wow-delay=".1s">
+            <div class="ud-feature-icon">
+              <i class="lni lni-invention"></i>
+            </div>
+            <div class="ud-feature-content">
+              <h3 class="ud-feature-title">Встроенный AI ассистент</h3>
+              <p class="ud-feature-desc">
+                За секунду создает задание по вашему запросу, 
+                извлекает текст с любого изображения, улучшает ваши задания и сам расставляет по тексту интерактивные элементы
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-sm-6">
           <div class="ud-single-feature wow fadeInUp" data-wow-delay=".15s">
             <div class="ud-feature-icon">
               <i class="lni lni-telegram-original"></i>
             </div>
             <div class="ud-feature-content">
-              <h3 class="ud-feature-title">Telegram</h3>
+              <h3 class="ud-feature-title">Интеграция с Telegram</h3>
               <p class="ud-feature-desc">
-                Глубокая интеграция с экосистемой <a href="https://telegram.org" target="_blank">Telegram</a> для
-                мгновенных уведомлений и удобного доступа к платформе без
-                регистрации и СМС.
+                Получайте уведомления и открывайте платформу прямо из Telegram. 
+                Студентам легко выполнять задания, а преподавателям — проверять и комментировать работы
               </p>
             </div>
           </div>
@@ -240,27 +250,13 @@
         <div class="col-xl-3 col-lg-3 col-sm-6">
           <div class="ud-single-feature wow fadeInUp" data-wow-delay=".2s">
             <div class="ud-feature-icon">
-              <i class="lni lni-cog"></i>
+              <i class="lni lni-graduation"></i>
             </div>
             <div class="ud-feature-content">
-              <h3 class="ud-feature-title">Гибкость</h3>
+              <h3 class="ud-feature-title">Редактор заданий</h3>
               <p class="ud-feature-desc">
-                Поддерживаем любые задания: с автоматической проверкой или творческие задания с обратной связью от
-                преподавателя.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-xl-3 col-lg-3 col-sm-6">
-          <div class="ud-single-feature wow fadeInUp" data-wow-delay=".1s">
-            <div class="ud-feature-icon">
-              <i class="lni lni-unlock"></i>
-            </div>
-            <div class="ud-feature-content">
-              <h3 class="ud-feature-title">Открытость</h3>
-              <p class="ud-feature-desc">
-                Мы используем открытые стандарты для хранения материалов. Вы можете скачать их в текстовом формате
-                и не зависеть от платформы
+                Поддерживаем любые задания с моментальной авто-проверкой.<br />
+                Развернутые ответы можно оценить вручную или с AI по готовым критериям ЕГЭ, ОГЭ или своим
               </p>
             </div>
           </div>
@@ -271,10 +267,10 @@
               <i class="lni lni-users"></i>
             </div>
             <div class="ud-feature-content">
-              <h3 class="ud-feature-title">Персонализация</h3>
+              <h3 class="ud-feature-title">Все в одном месте</h3>
               <p class="ud-feature-desc">
-                Настройте рабочую среду под себя: поддержка темной и светлой темы оформления, а также возможность выбора
-                языка интерфейса.
+                Приглашайте студентов, назначайте работы, следите за прогрессом, ведите учет уроков и оплат —
+                все в одном месте. А скучную рутину оставьте нашему AI ассистенту
               </p>
             </div>
           </div>
@@ -308,45 +304,63 @@
                 <div class="col-xl-3 col-lg-3 col-sm-6">
                   <div class="ud-single-feature wow fadeInUp" data-wow-delay=".1s">
                     <div class="ud-feature-content">
-                      <h3 class="ud-feature-title">AI Ассистент</h3>
+                      <h3 class="ud-feature-title">Создание заданий</h3>
                       <p class="ud-feature-desc">
-                        Встроенный AI ассистент для автоматического создания заданий, а также корректировки и улучшения
-                        существующих заданий.
+                        Не тратьте время на создание заданий вручную. Наш AI ассистент сделает это за вас:
                       </p>
+                      <ul>
+                        <li>создаст уникальное задание по вашему запросу</li>
+                        <li>распознает текст с любого изображения без ошибок</li>
+                        <li>сделает задание интерактивным, добавит элементы: поля вода, выпадающие списки и другие</li>
+                      </ul>
                     </div>
                   </div>
                 </div>
-                <div class="col-xl-3 col-lg-3 col-sm-6">
-                  <div class="ud-single-feature wow fadeInUp" data-wow-delay=".2s">
-                    <div class="ud-feature-content">
-                      <h3 class="ud-feature-title">Мощный редактор</h3>
-                      <p class="ud-feature-desc">
-                        Создавайте любые виды заданий: от простых тестов до сложных интерактивных
-                        упражнений с поддержкой мультимедиа, <a href="https://my.teachair.app/#/editor-demo"
-                          target="_blank">попробуйте <i class="lni lni-arrow-right"></i></a>
-                      </p>
-                    </div>
-                  </div>
-                </div>
+
                 <div class="col-xl-3 col-lg-3 col-sm-6">
                   <div class="ud-single-feature wow fadeInUp" data-wow-delay=".15s">
                     <div class="ud-feature-content">
-                      <h3 class="ud-feature-title">Организация материалов</h3>
-                      <p class="ud-feature-desc">
-                        Теги для поиска заданий. Шаблоны — для быстрой отправки работ
-                        студентам. Папки — храните материалы так, как это удобно именно вам.
+                      <h3 class="ud-feature-title">Организация заданий</h3>
+                      <p class="ud-feature-desc"> 
+                        Работайте со своими матреалами так, как удобно именно вам:
                       </p>
+                      <ul>
+                        <li>объединяйте задания в шаблоны готовых работ</li>
+                        <li>разложите шаблоны по папкам в любой удобной вам структуре</li>
+                        <li>пометьте задания тегами для быстрого поиска по одному или нескольким тегам</li>
+                      </ul>
                     </div>
                   </div>
                 </div>
+
+                <div class="col-xl-3 col-lg-3 col-sm-6">
+                  <div class="ud-single-feature wow fadeInUp" data-wow-delay=".2s">
+                    <div class="ud-feature-content">
+                      <h3 class="ud-feature-title">Назначение работ</h3>
+                      <p class="ud-feature-desc"> 
+                        Пришлашайте своих учеников на платформу и легко назначайте им работы: 
+                      </p>
+                      <ul>
+                        <li>используйте шаблон или создайте индивидуальную работу</li>
+                        <li>проверяйте работы сами или поручите это AI ассистенту</li>
+                        <li>оставляйте комментарии: к фрагменту текста, к заданию или к работе в целом</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
                 <div class="col-xl-3 col-lg-3 col-sm-6">
                   <div class="ud-single-feature wow fadeInUp" data-wow-delay=".25s">
                     <div class="ud-feature-content">
-                      <h3 class="ud-feature-title">Обратная связь</h3>
+                      <h3 class="ud-feature-title">Учет занятий и оплат</h3>
                       <p class="ud-feature-desc">
-                        Вы можете выделить текст в ответе ученика и дать обратную связь. Также вы можете оставлять общие
-                        комментарии к заданию.
+                        Для каждого студента у вас будет отдельная карточка для прозрачного учета:
                       </p>
+                      <ul>
+                        <li>укажите цену за урок в любой доступной валюте</li>
+                        <li>списывайте занятия: вручную или автоматом при назначении работ</li>
+                        <li>вносите информацию об оплатах и пополняйте количество занятий на балансе студента</li>
+                      </ul>
                     </div>
                   </div>
                 </div>
@@ -380,7 +394,7 @@
                     <div class="ud-feature-content">
                       <h3 class="ud-feature-title">Легкий доступ</h3>
                       <p class="ud-feature-desc">
-                        Моментальный доступ через приложение в Telegram или через любой браузер 
+                        Моментальный доступ через приложение в Telegram или любой браузер 
                         - меньше барьеров для старта.
                       </p>
                     </div>
@@ -413,7 +427,7 @@
                 <div class="col-xl-6 col-lg-6 col-sm-12">
                   <div class="ud-single-feature wow fadeInUp" data-wow-delay=".25s">
                     <div class="ud-feature-content">
-                      <h3 class="ud-feature-title">Свобода выбора</h3>
+                      <h3 class="ud-feature-title">Прозрачность</h3>
                       <p class="ud-feature-desc">
                         Возможность одновременной работы с несколькими преподавателями.
                         Отслеживайте количество оплаченных и списанных занятий.
@@ -660,7 +674,7 @@
                   <a href="#pricing">Тарифы</a>
                 </li>
                 <li>
-                  <a href="#faq">Документация</a>
+                  <a href="#faq">Инструкции</a>
                 </li>
                 <li>
                   <a href="https://api.teachair.app/docs" target="_blank">API</a>
