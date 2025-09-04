@@ -572,7 +572,7 @@ p {
 
 @media (max-width: 767px) {
   .ud-hero-content .ud-hero-title {
-    font-size: 26px;
+    font-size: 34px;
     line-height: 38px;
   }
 }
@@ -591,9 +591,14 @@ p {
 
 @media (max-width: 767px) {
   .ud-hero-content .ud-hero-desc {
-    font-size: 16px;
+    font-size: 12px;
     line-height: 30px;
   }
+}
+
+.ud-hero-content .ud-hero-desc span {
+  display: inline-block;
+  white-space: nowrap;
 }
 
 .ud-hero-buttons {
@@ -727,6 +732,9 @@ p {
   .ud-section-title p {
     font-size: 16px;
     line-height: 26px;
+  }
+  .ud-single-feature{
+    margin-bottom: 40px;
   }
 }
 
