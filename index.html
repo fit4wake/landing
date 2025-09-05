@@ -135,11 +135,19 @@
             </ul>
           </div>
           <div class="ud-hero-image wow fadeInUp" data-wow-delay=".25s" style="margin-bottom: 30px;">
-            <!-- Slide Show Start-->
-            <div class="slideshow-container">
-              <img src="assets/images/demo/demo-1.png" id="slide-show-img" alt="hero-image" />
+
+            <!-- Video Start-->
+            <div class="video-container" style="max-width: 1200px; margin: 0 auto;">
+              <video id="hero-video" autoplay muted loop playsinline style="width: 100%; height: auto;">
+                <source src="assets/video/ai-editor.mp4" type="video/mp4">
+                <!-- Fallback slideshow for browsers that don't support video -->
+                <div class="slideshow-container" style="display: none;">
+                  <img src="assets/images/demo/demo-1.png" id="slide-show-img" alt="hero-image" style="width: 100%; height: auto;" />
+                </div>
+              </video>
             </div>
-            <!-- Slide Show End-->
+            <!-- Video End-->
+             
             <img src="assets/images/hero/dotted-shape.svg" alt="shape" class="shape shape-1" style="bottom: -20px;" />
             <img src="assets/images/hero/dotted-shape.svg" alt="shape" class="shape shape-2" />
           </div>
@@ -858,45 +866,67 @@
 
     window.document.addEventListener("scroll", onScroll);
 
-    // Slideshow
+    // Slideshow fallback for browsers that don't support video
+    const heroVideo = document.getElementById('hero-video');
     const slideshowImg = document.getElementById('slide-show-img');
-    const images = [
-      'assets/images/demo/demo-1.png',
-      'assets/images/demo/demo-2.png',
-      'assets/images/demo/demo-3.png',
-      'assets/images/demo/demo-4.png',
-      'assets/images/demo/demo-5.png',
-      'assets/images/demo/demo-7.png',
-      'assets/images/demo/demo-8.png'
-    ];
-    let currentIndex = 0;
+    
+    if (slideshowImg) {
+      const images = [
+        'assets/images/demo/demo-1.png',
+        'assets/images/demo/demo-2.png',
+        'assets/images/demo/demo-3.png',
+        'assets/images/demo/demo-4.png',
+        'assets/images/demo/demo-5.png',
+        'assets/images/demo/demo-7.png',
+        'assets/images/demo/demo-8.png'
+      ];
+      let currentIndex = 0;
 
-    slideshowImg.style.transition = 'opacity 0.5s ease-in-out';
-    slideshowImg.style.opacity = '1';
+      slideshowImg.style.transition = 'opacity 0.5s ease-in-out';
+      slideshowImg.style.opacity = '1';
 
-    const preloadedImages = [];
-    images.forEach(src => {
-      const img = new Image();
-      img.src = src;
-      preloadedImages.push(img);
-    });
+      const preloadedImages = [];
+      images.forEach(src => {
+        const img = new Image();
+        img.src = src;
+        preloadedImages.push(img);
+      });
 
-    function nextSlide() {
-      currentIndex = (currentIndex + 1) % images.length;
-      slideshowImg.style.opacity = '0';
-      setTimeout(() => {
-        if (preloadedImages[currentIndex].complete) {
-          slideshowImg.src = images[currentIndex];
-          slideshowImg.style.opacity = '1';
-        } else {
-          preloadedImages[currentIndex].onload = () => {
+      function nextSlide() {
+        currentIndex = (currentIndex + 1) % images.length;
+        slideshowImg.style.opacity = '0';
+        setTimeout(() => {
+          if (preloadedImages[currentIndex].complete) {
             slideshowImg.src = images[currentIndex];
             slideshowImg.style.opacity = '1';
-          };
-        }
-      }, 500);
+          } else {
+            preloadedImages[currentIndex].onload = () => {
+              slideshowImg.src = images[currentIndex];
+              slideshowImg.style.opacity = '1';
+            };
+          }
+        }, 500);
+      }
+      
+      // Check if video is supported and working
+      if (heroVideo) {
+        heroVideo.addEventListener('error', () => {
+          // Video failed to load, show slideshow
+          heroVideo.style.display = 'none';
+          slideshowImg.parentElement.style.display = 'block';
+          setInterval(nextSlide, 5000);
+        });
+        
+        // If video doesn't start playing within 3 seconds, show slideshow
+        setTimeout(() => {
+          if (heroVideo.paused || heroVideo.readyState < 3) {
+            heroVideo.style.display = 'none';
+            slideshowImg.parentElement.style.display = 'block';
+            setInterval(nextSlide, 5000);
+          }
+        }, 3000);
+      }
     }
-    setInterval(nextSlide, 5000);
 
     // Countdown timer to tomorrow midnight
     function updateCountdown() {
