@@ -92,8 +92,7 @@
             </div>
 
             <div class="navbar-btn d-none d-sm-inline-block">
-              <a class="ud-main-btn ud-white-btn" href="https://my.teachair.app">Начать <i
-                  class="lni lni-arrow-right"></i>
+              <a class="ud-main-btn ud-white-btn" href="https://my.teachair.app">Начать бесплатно
               </a>
             </div>
           </nav>
@@ -122,35 +121,42 @@
             <ul class="ud-hero-buttons">
               <li>
                 <a href="https://t.me/teachair_bot" rel="nofollow noopener" target="_blank"
-                  class="ud-main-btn ud-white-btn">
+                  class="ud-main-btn">
                   Открыть в Telegram
                 </a>
               </li>
               <li>
                 <a href="https://my.teachair.app" rel="nofollow noopener" target="_blank"
-                  class="ud-main-btn ud-main-btn">
-                  В браузере <i class="lni lni-arrow-right"></i>
+                  class="ud-main-btn ud-white-btn">
+                  Начать бесплатно
                 </a>
               </li>
             </ul>
           </div>
           <div class="ud-hero-image wow fadeInUp" data-wow-delay=".25s" style="margin-bottom: 30px;">
 
-            <!-- Video Start-->
-            <div class="video-container" style="max-width: 1200px; margin: 0 auto;">
-              <video id="hero-video" autoplay muted loop playsinline style="width: 100%; height: auto;">
-                <source src="assets/video/ai-editor.mp4" type="video/mp4">
-                <!-- Fallback slideshow for browsers that don't support video -->
-                <div class="slideshow-container" style="display: none;">
-                  <img src="assets/images/demo/demo-1.png" id="slide-show-img" alt="hero-image" style="width: 100%; height: auto;" />
-                </div>
-              </video>
-            </div>
-            <!-- Video End-->
+                         <!-- Video Start-->
+             <div class="video-container" style="max-width: 1200px; margin: 0 auto; aspect-ratio: 16/9; position: relative;">
+               <video id="hero-video" autoplay muted loop playsinline poster="assets/video/teachair-demo-cover.png" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0;">
+                 <source src="assets/video/teachair-demo-1.mp4" type="video/mp4">
+                 <!-- Fallback slideshow for browsers that don't support video -->
+                 <div class="slideshow-container" style="display: none; width: 100%; height: 100%; position: absolute; top: 0; left: 0;">
+                   <img src="assets/images/demo/demo-1.png" id="slide-show-img" alt="hero-image" style="width: 100%; height: 100%; object-fit: cover;" />
+                 </div>
+               </video>
+             </div>
+             <!-- Video End-->
              
             <img src="assets/images/hero/dotted-shape.svg" alt="shape" class="shape shape-1" style="bottom: -20px;" />
             <img src="assets/images/hero/dotted-shape.svg" alt="shape" class="shape shape-2" />
           </div>
+             
+           <!-- Video Navigation -->
+           <div class="video-nav">
+             <a href="#" class="video-nav-link active" data-video="assets/video/teachair-demo-1.mp4">Задание из любого текста</a>
+             <a href="#" class="video-nav-link" data-video="assets/video/teachair-demo-2.mp4">Разпознавание изображения</a>
+             <a href="#" class="video-nav-link" data-video="assets/video/teachair-demo-3.mp4">Уникальное задание с ИИ</a>
+           </div>
         </div>
       </div>
     </div>
@@ -908,24 +914,58 @@
         }, 500);
       }
       
-      // Check if video is supported and working
-      if (heroVideo) {
-        heroVideo.addEventListener('error', () => {
-          // Video failed to load, show slideshow
-          heroVideo.style.display = 'none';
-          slideshowImg.parentElement.style.display = 'block';
-          setInterval(nextSlide, 5000);
-        });
-        
-        // If video doesn't start playing within 3 seconds, show slideshow
-        setTimeout(() => {
-          if (heroVideo.paused || heroVideo.readyState < 3) {
-            heroVideo.style.display = 'none';
-            slideshowImg.parentElement.style.display = 'block';
-            setInterval(nextSlide, 5000);
-          }
-        }, 3000);
-      }
+             // Check if video is supported and working
+       if (heroVideo) {
+         // Keep poster visible until video is fully loaded and ready to play
+         heroVideo.addEventListener('canplaythrough', () => {
+           // Video is ready to play, remove poster
+           heroVideo.removeAttribute('poster');
+         });
+         
+         heroVideo.addEventListener('error', () => {
+           // Video failed to load, show slideshow
+           heroVideo.style.display = 'none';
+           slideshowImg.parentElement.style.display = 'block';
+           setInterval(nextSlide, 5000);
+         });
+         
+         // If video doesn't start playing within 5 seconds, show slideshow
+         setTimeout(() => {
+           if (heroVideo.paused || heroVideo.readyState < 3) {
+             heroVideo.style.display = 'none';
+             slideshowImg.parentElement.style.display = 'block';
+             setInterval(nextSlide, 5000);
+           }
+         }, 5000);
+         
+         // Video navigation
+         const videoNavLinks = document.querySelectorAll('.video-nav-link');
+         videoNavLinks.forEach(link => {
+           link.addEventListener('click', (e) => {
+             e.preventDefault();
+             
+             // Remove active class from all links
+             videoNavLinks.forEach(l => l.classList.remove('active'));
+             
+             // Add active class to clicked link
+             link.classList.add('active');
+             
+             // Change video source
+             const newVideoSrc = link.getAttribute('data-video');
+             heroVideo.src = newVideoSrc;
+             heroVideo.load();
+             heroVideo.play();
+             
+             // Update active link styling
+             videoNavLinks.forEach(l => {
+               l.style.color = 'white';
+               l.style.opacity = '0.7';
+             });
+             link.style.color = 'white';
+             link.style.opacity = '1';
+           });
+         });
+       }
     }
 
     // Countdown timer to tomorrow midnight
